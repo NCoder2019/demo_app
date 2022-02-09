@@ -1,0 +1,442 @@
+body {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Controls Style*/
+
+.tab-control {
+    display: flex;
+    font-size: 14px;
+}
+
+/*Tab Control header*/
+
+.tab-control .tab-header {
+    padding: 30px 5px;
+}
+
+.tab-control .logo {
+    width: 32px;
+    height: 32px;
+    margin: 7px 3px;
+    background: red;
+    border-radius: 50%;
+}
+
+/*Tab Control Items*/
+
+.tab-control .tab-items {
+    width: 10rem;
+    padding: 5px;
+    border-right: 1px solid rgb(240, 240, 240);
+}
+
+.tab-control .tab-items .tab-item {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 15px 5px;
+    border-radius: 5px;
+}
+
+.tab-control .tab-items .tab-item .image {
+    width: 54px;
+}
+
+@keyframes tab-item-hover { from { background: transparent; } to { background: #e3e3e3; } }
+
+.tab-control .tab-items .tab-item:hover {
+    cursor: pointer;
+    animation: tab-item-hover 0.5s both;
+}
+
+/*Tab active item*/
+.tab-control .tab-items .active {
+    padding: 13px 5px !important;
+    background: transparent;
+    border: 2px solid #e8c100;
+    font-weight: 600;
+}
+
+/*Tab control body*/
+
+.tab-control .tab-body {
+    display: block;
+    width: 100%;
+    padding: 25px 55px;
+}
+
+.tab-control .tab-body .tab-body-header {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+.tab-control .tab-body .avatar {
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.tab-control .tab-body .role {
+    font-size: 12px;
+}
+
+.tab-control .tab-body .image {
+    width: 46px;
+    height: 46px;
+    margin-right: 10px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.tab-control .tab-body .route {
+    display: flex;
+    padding-bottom: 25px;
+    align-items: center;
+}
+
+.tab-control .tab-body span {
+    padding: 0 5px;
+}
+
+/*Tab Control controls*/
+.tab-control b {
+    color: black !important;
+}
+
+.tab-control input {
+    padding: 9px 14px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.tab-control input[type="searchbox"] {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.tab-control input:focus {
+    outline: none;
+}
+
+.tab-control .search-box {
+    display: flex;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.tab-control .search-box input {
+    min-width: 30rem;
+    border: none !important;
+}
+
+.tab-control .search-box button {
+    border: none !important;
+}
+
+.tab-control .search-box:focus {
+    border: 2px solid gray;
+}
+
+.tab-control .search-box button {
+    border: 2px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    background: white;
+}
+
+/*UI Controls*/
+
+.data-tab {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    padding-bottom: 20px;
+}
+
+.data-tab .tabs {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+
+.data-tab .tabs .active {
+    border-bottom: 2px solid orange !important;
+}
+
+.data-tab .tabs .tab {
+    display: flex;
+    justify-content: center;
+    padding: 10px 25px;
+    border-bottom: 2px solid transparent;
+    color: rgb(0, 172, 114);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.data-tab .tabs .tab:hover {
+    border-bottom: 2px solid orange;
+    cursor: pointer;
+}
+
+.data-tab .body .header {
+    padding: 20px 30px;
+}
+
+.data-tab .body .header {
+    color: gray !important;
+    font-weight: 600;
+}
+
+.combo-box {
+    width: 70%;
+    background: white;
+}
+
+.combo-box .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 17px;
+    cursor: pointer;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.combo-box .items {
+    position: absolute;
+    background: white;
+}
+
+.combo-box .item {
+    padding: 12px 17px;
+}
+
+.combo-box .item:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+/*Questions generator*/
+.questions-generator {
+    padding: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+/*Light*/
+
+.light {
+    background: rgb(238, 254, 255);
+}
+
+.light label {
+    color: rgb(0, 132, 141);
+    font-weight: 600;
+}
+
+.light .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: rgb(4, 224, 240);
+    border-radius: 5px;
+}
+
+.light button {
+    display: flex;
+    float: right;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: whitesmoke;
+    border: 2px solid rgb(4, 224, 240);
+    border-radius: 5px;
+}
+
+.light button:hover {
+    background: rgb(151, 248, 255);
+}
+
+.light button img {
+    margin-right: 10px;
+}
+
+/*Rose*/
+
+.rose {
+    background: rgb(235, 233, 255);
+}
+
+.rose label {
+    color: rgb(117, 79, 255);
+    font-weight: 600;
+}
+
+.rose .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: rgb(255, 120, 120);
+    border-radius: 5px;
+}
+
+.rose button {
+    display: flex;
+    float: right;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: whitesmoke;
+    border: 2px solid rgb(255, 142, 142);
+    border-radius: 5px;
+}
+
+.rose button:hover {
+    background: rgb(151, 248, 255);
+}
+
+.rose button img {
+    margin-right: 10px;
+}
+
+/*Orange*/
+
+/*Rose*/
+
+.orange {
+    background: rgb(255, 250, 233);
+}
+
+.orange label {
+    color: rgb(255, 120, 79);
+    font-weight: 600;
+}
+
+.orange .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: rgb(230, 255, 120);
+    border-radius: 5px;
+}
+
+.orange button {
+    display: flex;
+    float: right;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: whitesmoke;
+    border: 2px solid rgb(255, 225, 142);
+    border-radius: 5px;
+}
+
+.orange button:hover {
+    background: rgb(151, 248, 255);
+}
+
+.orange button img {
+    margin-right: 10px;
+}
+
+/*Questions generator*/
+
+.questions-generator .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px 0;
+}
+
+.questions-generator .flex-end {
+    justify-content: end;
+}
+
+.footer {
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/*Buttons*/
+
+.add-condition-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    border: 2px dashed rgb(0, 131, 55);
+    color: rgb(0, 131, 55);
+    border-radius: 5px;
+}
+
+.add-condition-button:hover {
+    cursor: pointer;
+    background: rgb(192, 255, 218)
+}
+
+.remove-button {
+    border: 2px solid rgb(255, 6, 6) !important;
+    color: red;
+}
+
+.remove-button:hover {
+    background: rgb(255, 148, 148) !important;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: green;
+    border: 1px solid lightgray;
+    color: white;
+    border-radius: 5px;
+}
+
+.submit-button:hover {
+    background: rgb(0, 95, 40);
+}
+
+.test-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid lightgray;
+    color: green;
+    border-radius: 5px;
+}
+
+
+/*Range*/
+
+.range {
+    display: flex;
+    justify-content: end !important;
+}
